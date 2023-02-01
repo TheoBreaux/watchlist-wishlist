@@ -1,0 +1,127 @@
+@font-face {
+    font-family: screamReal;
+    src: url("Fonts/Scream\ Real.ttf");
+    font-weight: bold;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    min-height: 100vh;
+    background-image: url("Images/david-hurley-ajEUFBFJkQc-unsplash.jpg");
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#app-title {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: screamReal;
+    margin-top: 0;
+    margin-bottom: 0;
+    -webkit-text-stroke: 3px black;
+}
+
+#movie-search-form {
+    text-align: center;
+}
+
+#movie-title {
+    width: 300px;
+    height: 59px;
+    border-radius: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    padding: 5px;
+    border: 2px solid black;
+}
+
+#movie-title-search-btn {
+    height: 59px;
+    width: 150px;
+    border-radius: 5px;
+    font-family: screamReal;
+    font-size: 25px;
+    padding: 5px;
+    border: 2px solid black;
+}
+
+.returned-film {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.movie-poster {
+    width: 350px;
+    height: auto;
+    margin-bottom: 0;
+    border: 10px double white;
+}
+
+.title {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #edf6f9;
+    font-family: screamReal;
+    font-size: 35px;
+    -webkit-text-stroke: 3px black;
+}
+
+.release-year {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 35px;
+    color: #edf6f9;
+    font-family: screamReal;
+    -webkit-text-stroke: 3px black;
+}
+
+#wishlist-btn {
+    margin-top: 0;
+    height: 59px;
+    width: 150px;
+    border-radius: 5px;
+    font-family: screamReal;
+    font-size: 25px;
+    padding: 5px;
+    border: 2px solid black;
+}
+
+.wishlist-div {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    display: none;
+    margin-top: 30px;
+    font-size: 35px;
+    color: #edf6f9;
+    font-family: screamReal;
+    -webkit-text-stroke: 3px black;
+    background: rgb(0, 0, 0, 0.3);
+    padding: 20px;
+}
+
+.watchlist-checkbox {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    -webkit-text-stroke: 0px white;
+}
+
+.checkbox-container {
+    padding: 0;
+    line-height: .8;
+}
+
+
+@media screen and (max-width: 625px) {
+    .movie-poster {
+        width: 50%;
+    }
+}

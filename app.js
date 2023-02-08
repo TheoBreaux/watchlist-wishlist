@@ -65,7 +65,7 @@ movieForm.addEventListener("submit", async function (e) {
     //store movie title input value
     const movieTitleInput = movieTitle.value;
     //grab data from API and store return value
-    const movieRequest = await fetch(`http://www.omdbapi.com/?t=${movieTitleInput}&apikey=1e8fd010`);
+    const movieRequest = await fetch(`https://www.omdbapi.com/?t=${movieTitleInput}&apikey=1e8fd010`);
 
     movieRequest.json().then((data) => {
         //store needed return values in variables from returned object     

@@ -94,6 +94,40 @@ body {
     border: 2px solid black;
 }
 
+.tooltip {
+    position: relative;
+    display: hidden;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    left: 150%;
+    top: -15px;
+    visibility: hidden;
+    width: 150px;
+    height: 60px;
+    background-color: red;
+
+    border: 5px dotted white;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    margin-left: -60px;
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+}
+
 .wishlist-div {
     margin-left: 20px;
     margin-right: 20px;
@@ -118,7 +152,6 @@ body {
     padding: 0;
     line-height: .8;
 }
-
 
 @media screen and (max-width: 625px) {
     .movie-poster {

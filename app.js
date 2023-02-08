@@ -40,7 +40,7 @@ if (watchlistData.length > 0) {
 
         // loop through savedFilms checkboxes to change styling of watched films
         for (let i = 0; i < savedFilms.length; i++) {
-            if (element.watched === true) {
+            if (watchlistData[i].watched === true) {
                 //change styling of movie title after box is checked
                 savedFilms[i].style.textDecoration = "line-through black";
                 movieCheckboxes[i].checked = true;
@@ -57,7 +57,6 @@ if (watchlistData.length > 0) {
             removeFilm(movieLabel);
         });
     }
-
 }
 
 //add submit eventlistener to form
